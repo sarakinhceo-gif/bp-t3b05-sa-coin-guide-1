@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="상암 코인노래방 BEST 5를 데이터 기반으로 분석한 블로그. 최신 시설, 방음 부스, 7만 곡, 가격 비교까지 전문가가 직접 검증했습니다. 전화 문의 010-6279-0862">
+    <meta name="keywords" content="상암 코인노래방 블로그, 상암동 코인노래방 추천, 상암 노래방 가이드, 코인노래방 데이터, 상암 가성비 노래방, 방음 부스 비교, 24시간 코인노래방, 혼자 노래방, 7만곡 노래방, 상암 역 근처 노래방">
+    <meta name="author" content="상암 코인노래방 가이드">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-sa-coin-guide-1.vercel.app/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>블로그 — 상암 코인노래방 BEST 5 (데이터 기반 가이드)</title>
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Courier New', Courier, monospace; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em; }
+        h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); color: #00ff41; text-shadow: 0 0 12px #00ff4180, 0 0 24px #00ff4140; }
+        h2 { font-size: clamp(1.6rem, 4vw, 2.6rem); color: #00f0ff; border-left: 6px solid #00ff41; padding-left: 0.8rem; margin: 2rem 0 1.2rem; }
+        h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); color: #c0c0c0; }
+        p, li, blockquote { font-size: clamp(0.95rem, 2vw, 1.1rem); max-width: 72ch; }
+        a { color: #00ff41; text-decoration: none; border-bottom: 2px solid transparent; transition: border 0.2s; }
+        a:hover { border-bottom-color: #00f0ff; color: #00f0ff; }
+        strong { color: #00f0ff; font-weight: 700; }
+
+        /* ===== LAYOUT ===== */
+        .bpaas-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* ===== NAV ===== */
+        .bpaas-nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: #0f0f0f; border-bottom: 2px solid #00ff41; position: sticky; top: 0; z-index: 1000; }
+        .bpaas-nav-logo { font-size: 1.4rem; font-weight: 900; color: #00ff41; text-shadow: 0 0 8px #00ff4180; }
+        .bpaas-nav-links { display: flex; gap: 2rem; list-style: none; }
+        .bpaas-nav-links a { font-size: 1rem; font-weight: 600; text-transform: uppercase; }
+        .bpaas-nav-tel { background: #00ff41; color: #0a0a0a; padding: 0.4rem 1rem; border-radius: 0; font-weight: 900; border: 2px solid #00ff41; }
+        .bpaas-nav-tel:hover { background: transparent; color: #00ff41; border-color: #00ff41; }
+
+        /* ===== HAMBURGER ===== */
+        .bpaas-hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .bpaas-hamburger span { display: block; width: 28px; height: 3px; background: #00ff41; transition: all 0.3s; }
+        #bpaas-menu-toggle { display: none; }
+        #bpaas-menu-toggle:checked ~ .bpaas-nav-links { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #0f0f0f; padding: 1rem; border-bottom: 2px solid #00ff41; }
+        #bpaas-menu-toggle:checked ~ .bpaas-hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        #bpaas-menu-toggle:checked ~ .bpaas-hamburger span:nth-child(2) { opacity: 0; }
+        #bpaas-menu-toggle:checked ~ .bpaas-hamburger span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        @media (max-width: 768px) {
+            .bpaas-nav-links { display: none; gap: 1rem; }
+            .bpaas-hamburger { display: flex; }
+            .bpaas-nav-links a { font-size: 1.1rem; padding: 0.5rem 0; }
+        }
+
+        /* ===== HERO ===== */
+        .bpaas-hero { padding: 4rem 0 2rem; border-bottom: 2px solid #00f0ff; margin-bottom: 2rem; }
+        .bpaas-hero h1 { margin-bottom: 0.8rem; }
+        .bpaas-hero p { font-size: 1.2rem; color: #c0c0c0; }
+
+        /* ===== CARD ===== */
+        .bpaas-card { background: #141414; border: 2px solid #2a2a2a; padding: 1.5rem; margin-bottom: 1.5rem; transition: border 0.2s; }
+        .bpaas-card:hover { border-color: #00ff41; }
+        .bpaas-card h3 { margin-bottom: 0.8rem; }
+        .bpaas-card p, .bpaas-card li { margin-bottom: 0.4rem; }
+        .bpaas-card ul { padding-left: 1.5rem; list-style: square; }
+        .bpaas-card .bpaas-stat { font-size: 1.8rem; font-weight: 900; color: #00ff41; display: block; margin: 0.5rem 0; }
+
+        /* ===== FAQ ===== */
+        .bpaas-faq { margin: 3rem 0; padding: 1.5rem; background: #0f0f0f; border: 2px solid #2a2a2a; }
+        .bpaas-faq details { margin-bottom: 1rem; padding: 0.8rem 0; border-bottom: 1px solid #2a2a2a; }
+        .bpaas-faq summary { font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #00f0ff; list-style: '▸ '; }
+        .bpaas-faq details[open] summary { color: #00ff41; list-style: '▾ '; }
+        .bpaas-faq p { margin-top: 0.6rem; padding-left: 1.2rem; }
+
+        /* ===== FOOTER ===== */
+        .bpaas-footer { border-top: 2px solid #2a2a2a; padding: 2rem 0; text-align: center; margin-top: 3rem; }
+        .bpaas-footer p { margin: 0.3rem 0; color: #888; }
+        .bpaas-footer a { color: #00ff41; }
+
+        /* ===== UTILITY ===== */
+        .bpaas-highlight { background: #00ff4120; border-left: 4px solid #00ff41; padding: 0.8rem 1rem; margin: 1.2rem 0; }
+        .bpaas-databox { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0; }
+        .bpaas-databox-item { background: #1a1a1a; border: 1px solid #00f0ff; padding: 1rem; flex: 1 1 160px; text-align: center; }
+        .bpaas-databox-item .number { font-size: 2rem; font-weight: 900; color: #00ff41; display: block; }
+        .bpaas-databox-item .label { font-size: 0.85rem; color: #aaa; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="bpaas-nav">
+    <div class="bpaas-nav-logo">⌘ 상암코인가이드</div>
+    <input type="checkbox" id="bpaas-menu-toggle" hidden>
+    <label for="bpaas-menu-toggle" class="bpaas-hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+    </label>
+    <ul class="bpaas-nav-links">
+        <li><a href="/">홈</a></li>
+        <li><a href="/blog" class="active">블로그</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="tel:01062790862" class="bpaas-nav-tel">☎ 010-6279-
+</body>
+</html>
